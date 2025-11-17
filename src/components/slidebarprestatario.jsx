@@ -37,8 +37,9 @@ function Slidebarprestatario() {
                 <li className="mb-10 text-3xl font-semibold text-center">Menu Principal</li>
                 <li><a href="/prestatario/dashboard" className="mb-3 text-base font-extralight hover:bg-blue-500">Dashboard</a></li>
                 <li><a href="/prestatario/ofertaprestamo" className="mb-3 text-base font-extralight hover:bg-blue-500">Ofertas Prestamos</a></li>
+                <li><a href="/prestatario/pagos" className="mb-3 text-base font-extralight hover:bg-blue-500">Pagos</a></li>
                 <li><a href="/prestatario/prestamos" className="mb-3 text-base font-extralight hover:bg-blue-500">Prestamos</a></li>
-                 <li><a href="/prestatario/historial" className="mb-3 text-base font-extralight hover:bg-blue-500">Historial</a></li>
+                <li><a href="/prestatario/historial" className="mb-3 text-base font-extralight hover:bg-blue-500">Historial</a></li>
             </ul>
 
             <div className="mt-4">

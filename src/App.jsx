@@ -12,6 +12,7 @@ import PrestatarioDashboard from './pages/Prestatario/PrestatarioDashboard.jsx'
 import PrestatarioOfertaPrestamo from './pages/Prestatario/PrestatarioOfertaPrestamo.jsx'
 import PrestatarioPrestamos from './pages/Prestatario/PrestatarioPrestamos.jsx'
 import PrestatarioHistorial from './pages/Prestatario/PrestatarioHistorial.jsx'
+import PrestatarioPagos from './pages/Prestatario/PrestatarioPagos.jsx'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path='/Prestatario/OfertaPrestamo' element={<PrestatarioOfertaPrestamo/>}/>
         <Route path='/Prestatario/Prestamos' element={<PrestatarioPrestamos/>}/>
         <Route path='/Prestatario/Historial' element={<PrestatarioHistorial/>}/>
+        <Route path='/Prestatario/Pagos' element={<PrestatarioPagos/>}/>
         
       </Routes>
     </Router>

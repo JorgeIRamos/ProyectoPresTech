@@ -6,7 +6,7 @@ function PrestamistaPrestamos() {
 
     const prestamos = [
     {
-      cliente: "Juan Pérez",
+      nombre: "Prestamo Personal #1234",
       monto: "$5,000,000",
       tasa: "2.5%",
       cuotas: "3/12",
@@ -15,7 +15,7 @@ function PrestamistaPrestamos() {
       estado: "Activo",
     },
     {
-      cliente: "María García",
+      nombre: "Prestamo Personal #1234",
       monto: "$3,500,000",
       tasa: "3.0%",
       cuotas: "2/6",
@@ -24,7 +24,7 @@ function PrestamistaPrestamos() {
       estado: "Activo",
     },
     {
-      cliente: "Carlos Rodríguez",
+      nombre: "Prestamo Personal #1234",
       monto: "$2,000,000",
       tasa: "2.0%",
       cuotas: "24/24",
@@ -33,7 +33,7 @@ function PrestamistaPrestamos() {
       estado: "Pagado",
     },
     {
-      cliente: "Ana Martínez",
+      nombre: "Prestamo Personal #1234",
       monto: "$5,000,000",
       tasa: "2.5%",
       cuotas: "12/12",
@@ -76,7 +76,7 @@ function PrestamistaPrestamos() {
       <table className="table">
         <thead>
           <tr className="text-black">
-            <th>Cliente</th>
+            <th>Nombre</th>
             <th>Monto</th>
             <th>Tasa</th>
             <th>Cuotas</th>
@@ -89,7 +89,7 @@ function PrestamistaPrestamos() {
         <tbody>
           {prestamos.map((p, index) => (
             <tr key={index} className="text-base">
-              <td>{p.cliente}</td>
+              <td>{p.nombre}</td>
               <td className="bold">{p.monto}</td>
               <td>{p.tasa}</td>
               <td>{p.cuotas}</td>
