@@ -1,9 +1,34 @@
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 
 function Slidebarprestatario() {
 
     const navigate = useNavigate();
+        const [email, setEmail] = useState("");
+        const idPersona = localStorage.getItem("personaId");
+    
+        useEffect(() => {
+            if (!idPersona) {
+                console.error("No se encontró la id de la persona en localStorage");
+                return;
+            }
+    
+            fetch(`https://localhost:7105/api/Persona/${idPersona}`)
+                .then(res => {
+                    if (!res.ok) throw new Error("Error al obtener persona");
+                    return res.json();
+                })
+                .then(data => {
+                    console.log("Persona cargada:", data);
+                    setEmail(data.email);
+                })
+                .catch(err => console.error("Error cargando persona:", err));
+        }, [idPersona]);
+    
+
+
+
     return (
         <div className="drawer">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -44,7 +69,7 @@ function Slidebarprestatario() {
 
             <div className="mt-4">
              <p className="font-thin">Prestatario</p>
-             <p className="my-2 font-semibold hover:text-blue-200">example@email.com</p>
+             <p className="my-2 font-semibold hover:text-blue-200">{email}</p>
             </div>
 
             </div>

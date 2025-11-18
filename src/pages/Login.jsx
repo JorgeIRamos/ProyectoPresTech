@@ -46,6 +46,7 @@ function Login() {
       localStorage.setItem("usuario", JSON.stringify(data.persona));
       localStorage.setItem("prestamistaId", data.prestamistaId ?? "");
       localStorage.setItem("prestatarioId", data.prestatarioId ?? "");
+      localStorage.setItem("personaId", data.persona.personaId);
 
       // Redirigir según el rol
       if (data.persona.rol === "prestamista") {

@@ -22,8 +22,8 @@ function PrestamistaDashboard() {
     },
     {
       label: "Atención",
-      value: "3",
-      description: "Pagos vencidos",
+      value: "11",
+      description: "Ofertas de Prestamos creadas",
     },
   ];
 
