@@ -22,7 +22,7 @@ function PrestamistaClientes() {
 
         const data = await res.json();
         setClientes(data);
-        setFilteredClientes(data); // Guardamos copia inicial
+        setFilteredClientes(data);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -33,7 +33,6 @@ function PrestamistaClientes() {
     fetchClientes();
   }, []);
 
-  // 🔍 Filtrado según el texto de búsqueda
   useEffect(() => {
     const filtro = clientes.filter((c) =>
       c.nombre.toLowerCase().includes(search.toLowerCase()) ||

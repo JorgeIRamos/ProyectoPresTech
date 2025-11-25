@@ -24,7 +24,6 @@ function Login() {
       contraseña: formData.password,
     };
 
-    console.log("Enviando login:", payload);
 
     try {
       const res = await fetch("https://localhost:7105/api/auth/login", {
@@ -34,21 +33,18 @@ function Login() {
       });
 
       const data = await res.json();
-      console.log("Respuesta del backend:", data);
 
       if (!res.ok) {
         alert(data.message || "Credenciales incorrectas");
         return;
       }
 
-
-      // Guardamos datos importantes en localStorage
       localStorage.setItem("usuario", JSON.stringify(data.persona));
       localStorage.setItem("prestamistaId", data.prestamistaId ?? "");
       localStorage.setItem("prestatarioId", data.prestatarioId ?? "");
       localStorage.setItem("personaId", data.persona.personaId);
 
-      // Redirigir según el rol
+
       if (data.persona.rol === "prestamista") {
         navigate("/Prestamista/Dashboard");
       } else if (data.persona.rol === "prestatario") {
@@ -65,7 +61,7 @@ function Login() {
 
   return (
     <>
-      <div className="min-h-screen flex justify-center items-center bg-linear-to-br from-blue-500 to-blue-900 to-55%">
+      <div className="min-h-screen flex justify-center items-center bg-linear-to-br from-blue-500 to-blue-900 to-55% text-white">
         <form onSubmit={handleSubmit} className="bg-white/10 p-20 rounded-xl">
           <h2 className="lg:text-4xl lg:ml-4 mb-6 font-bold ml-6 text-2xl">
             INICIO SESIÓN
@@ -99,7 +95,7 @@ function Login() {
 
           <button
             type="submit"
-            className="btn lg:ml-20 mb-5 bg-cyan-500 hover:bg-cyan-400 border-cyan-500 ml-15"
+            className="btn lg:ml-20 mb-5 bg-cyan-500 hover:bg-cyan-400 border-cyan-500 ml-15 text-white"
           >
             Iniciar Sesión
           </button>
@@ -127,4 +123,5 @@ function Login() {
   );
 }
 
-export default Login;
+export default Login;
+

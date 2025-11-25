@@ -34,7 +34,7 @@ function Slidebarprestatario() {
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
                 {/* Navbar */}
-                <div className="navbar bg-gray-900 shadow-sm h-full">
+                <div className="navbar bg-gray-900 shadow-sm h-full text-white">
                     <div className="flex-none lg:mx-5">
                         <label htmlFor="my-drawer" className="btn btn-square btn-ghost drawer-button">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-5 w-5 stroke-current">
@@ -57,7 +57,7 @@ function Slidebarprestatario() {
             <div className="drawer-side">
             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
 
-            <div className="flex flex-col justify-between h-full w-80 bg-gray-900 text-base-content p-4 ">
+            <div className="flex flex-col justify-between h-full w-80 bg-gray-900 text-base-content p-4 text-white">
             <ul className="menu">
                 <li className="mb-10 text-3xl font-semibold text-center">Menu Principal</li>
                 <li><a href="/prestatario/dashboard" className="mb-3 text-base font-extralight hover:bg-blue-500">Dashboard</a></li>

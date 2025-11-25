@@ -67,7 +67,7 @@ function PrestamistaDetalleOferta() {
                     Volver para atrás
                 </button>
 
-                <div className="max-w-3xl mx-auto bg-white shadow-lg p-6 rounded-xl">
+                <div className="max-w-4xl mx-auto bg-white shadow-lg p-6 rounded-xl h-80">
                     <h1 className="text-3xl font-bold mb-3 text-black">
                         Préstamo {oferta?.categoria} #{oferta?.ofertaPrestamoId}
                     </h1>
@@ -90,7 +90,6 @@ function PrestamistaDetalleOferta() {
                     onClick={() => {eliminarOfertaPrestamo(oferta.ofertaPrestamoId)}}
                     >Eliminar</button>
                     <button className="btn btn-success mt-6 text-white mx-2" disabled={!oferta?.disponible} onClick={() => navigate(`/Prestamista/EditarOferta/${oferta.ofertaPrestamoId}`)}>Actualizar</button>
-                    <button className="btn btn-primary mt-6 text-white mx-2">Ver prestamo</button>
                 </div>
                 </div>
             </div>

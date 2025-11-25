@@ -87,7 +87,7 @@ function PrestamistaEditarOferta() {
             }
 
             alert("Oferta actualizada correctamente");
-            navigate("/Prestamista/Prestamos");
+            navigate("/Prestamista/Ofertasprestamos");
 
         } catch (error) {
             console.error(error);

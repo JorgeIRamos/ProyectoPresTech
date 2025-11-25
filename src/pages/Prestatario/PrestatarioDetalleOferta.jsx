@@ -9,7 +9,6 @@ function PrestatarioDetalleOferta() {
     const prestatarioId = localStorage.getItem("prestatarioId");
     const navigate = useNavigate();
 
-    //Cargar datos de la oferta
     useEffect(() => {
         fetch(`https://localhost:7105/api/OfertaPrestamo/${id}`)
             .then(res => res.json())
@@ -42,7 +41,6 @@ function PrestatarioDetalleOferta() {
             saldoRestante: monto
         };
 
-        console.log("Payload enviado:", payload);
 
         try {
             const res = await fetch("https://localhost:7105/api/Prestamo", {
@@ -58,7 +56,6 @@ function PrestatarioDetalleOferta() {
             }
 
             const data = await res.json();
-            console.log("Prestamo creado:", data);
 
             alert("Préstamo solicitado con éxito");
             navigate("/prestatario/prestamos");

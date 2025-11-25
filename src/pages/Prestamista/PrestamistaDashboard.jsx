@@ -9,6 +9,7 @@ function PrestamistaDashboard() {
     const [error, setError] = useState(null);
 
     const prestamistaId = localStorage.getItem("prestamistaId");
+    
 
     useEffect(() => {
         const fetchDashboard = async () => {

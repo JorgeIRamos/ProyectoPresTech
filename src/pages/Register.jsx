@@ -25,7 +25,6 @@ function Register() {
     });
   };
 
-  // Mapeo texto del form → Valores REALES del backend
   const mapTipoDocumento = (doc) => {
     if (doc === "Cédula de ciudadania") return 1;
     if (doc === "Cédula de extranjería") return 2;
@@ -60,7 +59,6 @@ function Register() {
   rol: formData.rol.toLowerCase()
 };
 
-    console.log("Enviando al backend:", payload);
 
     try {
       const res = await fetch("https://localhost:7105/api/registro", {
@@ -70,8 +68,6 @@ function Register() {
       });
 
       const data = await res.json();
-      console.log("Respuesta del backend:", data);
-
       
       if (res.ok) {
         alert("¡Usuario registrado correctamente!");
@@ -88,7 +84,7 @@ function Register() {
 
   return (
     <div className="min-h-screen flex justify-center items-center bg-linear-to-br from-blue-500 to-blue-900 to-55%">
-      <form onSubmit={handleSubmit} className="bg-white/10 p-20 rounded-xl w-11/12 max-w-md backdrop-blur-md space-y-4">
+      <form onSubmit={handleSubmit} className="bg-white/10 p-20 rounded-xl w-11/12 max-w-md backdrop-blur-md space-y-4 text-white">
         <h2 className="lg:text-4xl lg:ml-4 mb-6 font-bold ml-6 text-2xl text-center">REGISTRO</h2>
 
         <label> Nombre Completo:

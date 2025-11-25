@@ -12,8 +12,8 @@ function Home() {
      <section className="hero min-h-screen bg-linear-to-br from-blue-500  to-blue-900 to-55%">
         <div className="hero-content text-center">
           <div className="max-w-prose">
-            <h1 className="lg:text-7xl font-bold text-5xl text-shadow-gray-500/70">BIENVENIDO A PRESTECH</h1>
-            <p className="py-7 lg:text-base text-sm ">PresTech es la plataforma digital que automatiza y organiza el proceso de gestión de préstamos, ofreciendo control total para prestamistas y transparencia para prestatarios.</p>
+            <h1 className="lg:text-7xl font-bold text-5xl text-shadow-gray-500/70 text-white">BIENVENIDO A PRESTECH</h1>
+            <p className="py-7 lg:text-base text-sm text-white">PresTech es la plataforma digital que automatiza y organiza el proceso de gestión de préstamos, ofreciendo control total para prestamistas y transparencia para prestatarios.</p>
             <button className="btn btn-active btn-primary bg-cyan-600 hover:bg-cyan-300 hover:text-black" onClick={() => navigate("/Login")}>Comenzar Ahora</button>
           </div>
         </div>
@@ -121,7 +121,7 @@ function Home() {
           reduce errores y mejora la comunicación entre las partes involucradas.</p>
       </section>
  
-      <section className="py-10 lg:px-60 bg-linear-to-tl from-cyan-200 to-blue-900 to-50% lg:mx-60 mb-7">
+      <section className="py-10 lg:px-60 bg-linear-to-tl from-cyan-200 to-blue-900 to-50% lg:mx-60 mb-7 text-white">
         <h2 className='text-center text-2xl font-bold pt-2'>Comienza a gestionar tus préstamos hoy</h2>
         <p  className="text-base font-stretch-90% m-3 pb-2 pt-3 text-center">Únete a PresTech y transforma la manera en que administras préstamos</p>
         <div className="flex justify-center">
@@ -129,7 +129,7 @@ function Home() {
         </div>
       </section>
 
-      <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+      <footer className="footer sm:footer-horizontal text-base-content p-10 bg-blue-950 text-white">
   <nav>
     <h6 className="footer-title">PresTech</h6>
     <a className="link link-hover">Plataforma digital para la gestión eficiente de préstamos personales y empresariales.</a>

@@ -4,7 +4,7 @@ function navbar() {
     const navigate = useNavigate();
 
     return(
-        <div className="navbar bg-gray-900">
+        <div className="navbar bg-gray-900 text-white">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -14,7 +14,7 @@ function navbar() {
         tabIndex="-1"
         className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li><a>Caracteristicas</a></li>
-        <li><a>Roles</a></li>
+        <li><a>Roles</a></li> 
         <li><a>Beneficios</a></li>
       </ul>
     </div>
@@ -28,7 +28,7 @@ function navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn lg:mr-3 mr-0 bg-cyan-500 hover:bg-blue-600"  onClick={() => navigate("/Login")}>Iniciar Sesion</a>
+    <a className="btn lg:mr-3 mr-0 bg-cyan-500 hover:bg-blue-600 border-cyan-500"  onClick={() => navigate("/Login")}>Iniciar Sesion</a>
     <a className="btn lg:mr-3 mr-0 bg-gray-900 border-cyan-500 text-cyan-500 hover:bg-blue-600 hover:text-white hover:border-blue-600" onClick={() => navigate("/Register")}>Registrarse</a>
   </div>
 </div>

@@ -8,8 +8,6 @@ function PrestatarioOfertaPrestamo() {
     const [filtroMontoAplicado, setFiltroMontoAplicado] = useState("");
 
 
-
-    const prestatarioId = localStorage.getItem("prestatarioId"); 
     useEffect(() => {
         fetch("https://localhost:7105/api/OfertaPrestamo")
             .then((res) => res.json())

@@ -7,6 +7,7 @@ function PrestamistaDetallePrestamo(){
     const navigate = useNavigate();
     const [prestamo, setPrestamo] = useState(null);
     const [loading, setLoading] = useState(true);
+    const prestamistaId = localStorage.getItem("prestamistaId");
     const [error, setError] = useState(null);
 
     useEffect(() => {
@@ -144,7 +145,8 @@ function PrestamistaDetallePrestamo(){
             </div>
 
             <div className="text-black flex justify-center">
-                <button className="btn btn-primary px-50 mt-5" onClick={() => navigate(`/prestamista/cliente/${prestamo.prestatarioId}`)}>Ver cliente</button>
+                <button className="btn btn-primary mx-5 mt-5 px-30" onClick={() => navigate(`/prestamista/cliente/${prestamo.prestatarioId}`)}>Ver cliente</button>
+                <button className="btn btn-outline btn-secondary mx-5 mt-5 px-30  " onClick={() => navigate(`/prestamista/transacciones`)}>Ver transacciones</button>
             </div>
         </div>
 

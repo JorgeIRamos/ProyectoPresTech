@@ -65,9 +65,9 @@ function PrestatarioDashboard() {
               <span className="card-title">Proximo pago</span>
             </div>
             <div className="mx-3 font-semibold text-3xl ml-5">
-                {dashboard?.proximoPago 
-                ? new Date(dashboard.proximoPago).toLocaleDateString('es-CO')
-                : "—"
+              {(!dashboard?.proximoPago || dashboard.proximoPago.startsWith("0001"))
+                ? "No hay pagos proximos"
+                : new Date(dashboard.proximoPago).toLocaleDateString('es-CO')
               }
             </div>
             <div className="mx-3 mb-2 font-light ml-5">Fecha del proximo pago</div>

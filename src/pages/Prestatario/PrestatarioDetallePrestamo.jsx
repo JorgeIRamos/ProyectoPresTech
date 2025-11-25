@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import Slidebarprestamista from "../../components/slidebarprestamista";
+import Slidebarprestatario from "../../components/slidebarprestatario";
 
 function PrestatarioDetallePrestamo(){
     const { prestamoId } = useParams();
@@ -25,7 +25,7 @@ function PrestatarioDetallePrestamo(){
             }
         };
 
-        fetchDetallePrestamo();
+        fetchDetallePrestamo(); 
     }, [prestamoId]);
 
     
@@ -33,7 +33,7 @@ function PrestatarioDetallePrestamo(){
 
     return(
         <>
-        <Slidebarprestamista />
+        <Slidebarprestatario />
         <div className="min-h-screen bg-gray-100 p-6">
             <button
                 onClick={() => navigate(-1)}

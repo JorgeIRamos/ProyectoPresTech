@@ -12,7 +12,7 @@ function PrestamistaPrestamos() {
 
   useEffect(() => {
     if (!prestamistaId) {
-      console.error("No se encontró prestamistaId en localStorage");
+      console.error("No se encontró prestamistaId en sessionStorage");
       return;
     }
 
@@ -22,7 +22,6 @@ function PrestamistaPrestamos() {
         return res.json();
       })
       .then((data) => {
-        console.log("Ofertas cargadas:", data);
         setPrestamos(data);
       })
       .catch((err) => console.error("Error cargando ofertas:", err));
