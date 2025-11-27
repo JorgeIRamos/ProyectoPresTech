@@ -32,7 +32,7 @@ function PrestamistaTransacciones() {
         <div className="space-y-6 bg-linear-to-tl from-gray-300 to-gray-100 to-50% text-black min-h-screen">
         <div className="lg:mx-50">
       <h1 className="text-5xl font-bold text-foreground mb-5 pt-10">Transaccion</h1>
-      <p className="text-muted-foreground">Gestiona la información de las transacciones de tus totalPrestamosActivos</p>
+      <p className="text-muted-foreground">Gestiona la información de las transacciones de tus prestamos</p>
      </div>
 
     <div className="space-y-6 rounded-2xl lg:mx-50 py-10 bg-white text-black shadow-md">
