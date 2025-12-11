@@ -1,16 +1,52 @@
-# React + Vite
+# PresTech - FrontEnd
+## ✨ Descripción del Proyecto
+Este repositorio alberga el código del FrontEnd (interfaz de usuario) del sitio web de PresTech. Es la aplicación web que interactúa con el BackEnd de PresTech para mostrar datos, gestionar la navegación y manejar las interacciones del usuario.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El proyecto está configurado con Vite, proporcionando una experiencia de desarrollo rápida, y utiliza React para la construcción de la interfaz mediante componentes.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologías Utilizadas
+Este proyecto fue iniciado con la plantilla React + Vite, lo que establece un entorno de desarrollo moderno y eficiente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Framework: React
 
-## React Compiler
+Construcción y Servidor de Desarrollo: Vite
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Lenguaje Principal: JavaScript / JSX 
 
-## Expanding the ESLint configuration
+Gestión de Paquetes: npm 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Estilos: Tailwind CSS
+
+## ⚙️ Configuración e Instalación
+Sigue estos pasos para configurar y ejecutar la aplicación de FrontEnd en tu entorno local.
+
+Requisitos Previos
+Asegúrate de tener instalado el siguiente software:
+
+Node.js: Versión 18+ (Recomendado)
+
+npm (incluido con Node.js)
+
+## Pasos de Instalación
+Clonar el Repositorio:
+
+```bash
+  git clone https://github.com/JorgeIRamos/ProyectoPresTech.git
+  cd ProyectoPresTech
+   ```
+
+
+Instalar Dependencias: Ejecuta el comando correspondiente según el gestor de paquetes que uses:
+
+```bash
+   npm install
+   ```
+
+## ▶️ Ejecución del Proyecto
+Modo Desarrollo
+Para iniciar el servidor de desarrollo, lo que permite ver los cambios instantáneamente:
+
+```bash
+   npm run dev
+   ```
+La aplicación estará disponible en tu navegador en la dirección que indique la consola (usualmente http://localhost:5173/).
