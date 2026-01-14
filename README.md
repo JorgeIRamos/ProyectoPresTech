@@ -55,6 +55,6 @@ Para iniciar el servidor de desarrollo, lo que permite ver los cambios instantá
    ```
 La aplicación estará disponible en tu navegador en la dirección que indique la consola (usualmente http://localhost:5173/).
 
-## 👨‍💻 AUTORES
+## 👨‍💻 AUTOR
 
 Jorge Iván Ramos Murgas
